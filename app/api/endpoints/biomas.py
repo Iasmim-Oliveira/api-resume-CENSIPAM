@@ -17,11 +17,10 @@ class BiomaEventoResponse(BaseModel):
 def getEventsByBiome(
         startDate: date,
         endDate: date,
-        bioma_id: Optional[int] = None,  # Parâmetro opcional para filtrar pelo bioma
+        bioma_id: Optional[int] = None, 
         db: Session = Depends(get_db)
 ): 
     try:
-        # Consultando a query, agora considerando o bioma_id se ele for passado
         query = """
         SELECT
             CASE
