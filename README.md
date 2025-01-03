@@ -26,7 +26,7 @@ Retorna a quantidade de eventos de queimadas por bioma, considerando um interval
 GET http://127.0.0.1:8000/biomas?startDate=2024-01-01&endDate=2024-12-31&bioma_id=1
 ```
 
-### Exemplo de resposta
+### Exemplo de Resposta
 
 ```bash
 [
@@ -37,6 +37,38 @@ GET http://127.0.0.1:8000/biomas?startDate=2024-01-01&endDate=2024-12-31&bioma_i
   {
     "bioma": "CAATINGA",
     "quantidade_eventos": 120
+  }
+]
+```
+
+### `GET /ranking-severidade`
+
+Retorna os 10 eventos mais severos ocorridos no dia anterior, trazendo: ID do evento, severidade calculada, duração (em dias) do evento, área do evento, estado e cidade.
+Esse endpoint não requer parâmetros, pois todas as condições de consultas são imutáveis.
+
+#### Exemplo de Resposta
+```bash
+[
+  {
+    "id_evento": 0,
+    "severidade": 0,
+    "duracao_evento": 0,
+    "area_evento": 0,
+    "uf": "string",
+    "cidade": "string"
+  }
+]
+```
+
+### `GET /acumulado-br`
+Retorna todos os evntos ocorridos no ano atual. Esse endpoint não requer parâmetros.
+
+#### Exemplo de Resposta
+```bash
+[
+  {
+    "numero_eventos": 0,
+    "data": "string"
   }
 ]
 ```
