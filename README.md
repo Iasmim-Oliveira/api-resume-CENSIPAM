@@ -1,4 +1,4 @@
-# API de Eventos de Fogo
+# API de Eventos de Fogo 
 
 A **API de Eventos de Fogo** é uma API que fornece informações sobre eventos de queimadas no Brasil. Ela permite consultas com base em um intervalo de datas específico, utilizando dados geoespaciais do banco de dados SIG-SIPAM para analisar e contar os eventos de queimadas em várias regiões biogeográficas.
 
