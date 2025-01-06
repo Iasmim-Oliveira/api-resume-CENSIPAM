@@ -30,7 +30,7 @@ def getAcumulatedBrazil(db: Session = Depends(get_db)):
 
     events = [
         AcumulatedBrazilSchema(
-            data=row[0].strftime('%Y-%m-%d'),  # Converte a data para string
+            data=row[0].strftime('%Y-%m-%d'), 
             numero_eventos=row[1]
         )
         for row in result
