@@ -118,5 +118,3 @@ uvicorn app.main:app --reload
 - Envie as alterações para o seu repositório forkado (git push origin feature/nome-da-funcionalidade).
 - Abra um pull request para o repositório principal.
   
-## Licença
-Este projeto está licenciado sob a MIT License.
